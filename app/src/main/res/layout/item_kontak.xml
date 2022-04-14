@@ -16,55 +16,54 @@
 
             <ImageView
                 android:id="@+id/imageView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="9dp"
+                android:layout_width="0dp"
+                android:layout_height="117dp"
                 android:paddingTop="16dp"
                 android:paddingBottom="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/lblNama"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:srcCompat="@tools:sample/avatars" />
+                tools:srcCompat="@drawable/avatar" />
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="21dp"
-                android:layout_marginBottom="11dp"
+                android:layout_marginEnd="8dp"
                 android:text="tahun"
-                app:layout_constraintBottom_toTopOf="@+id/btnDelete"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/btnDelete"
-                app:layout_constraintStart_toEndOf="@+id/lblUmur" />
+                app:layout_constraintStart_toEndOf="@+id/lblUmur"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/lblNama"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="1dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="7dp"
                 android:text="Agus"
                 android:textSize="16sp"
-                app:layout_constraintBottom_toTopOf="@+id/textView8"
                 app:layout_constraintEnd_toStartOf="@+id/textView8"
-                app:layout_constraintStart_toEndOf="@+id/imageView2" />
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
             <TextView
                 android:id="@+id/lblGender"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="10dp"
                 android:text="Pria"
                 android:textSize="14sp"
-                app:layout_constraintStart_toStartOf="@+id/lblNama"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
                 app:layout_constraintTop_toBottomOf="@+id/lblNama" />
 
             <TextView
                 android:id="@+id/lblUmur"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="7dp"
+                android:layout_marginEnd="13dp"
                 android:text="27"
                 android:textSize="14sp"
                 app:layout_constraintBaseline_toBaselineOf="@+id/textView"
@@ -75,31 +74,43 @@
                 android:id="@+id/textView8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="9dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
                 android:text="/"
-                android:textSize="16sp"
-                app:layout_constraintBaseline_toBaselineOf="@+id/lblUmur"
+                android:textSize="14sp"
                 app:layout_constraintEnd_toStartOf="@+id/lblUmur"
-                app:layout_constraintStart_toEndOf="@+id/lblNama" />
+                app:layout_constraintStart_toEndOf="@+id/lblNama"
+                app:layout_constraintTop_toBottomOf="@+id/lblNama" />
 
             <TextView
                 android:id="@+id/lblStatus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginBottom="11dp"
+                android:layout_marginEnd="18dp"
                 android:text="Single"
-                app:layout_constraintBottom_toTopOf="@+id/btnDelete"
-                app:layout_constraintStart_toStartOf="@+id/btnDelete" />
+                app:layout_constraintBottom_toBottomOf="@+id/textView"
+                app:layout_constraintEnd_toEndOf="@+id/btnDelete"
+                app:layout_constraintTop_toTopOf="@+id/textView" />
 
             <Button
                 android:id="@+id/btnDelete"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
                 android:text="Delete"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/textView" />
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnDelete"
+                app:layout_constraintHorizontal_bias="0.961"
+                app:layout_constraintStart_toStartOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>

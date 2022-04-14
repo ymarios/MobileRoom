@@ -1,5 +1,6 @@
 package com.adl.mobileroom.adapter
 
+import android.content.ClipData
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
@@ -46,6 +47,5 @@ class MobileRoomAdapter (val data :ArrayList<MobileModel>) : RecyclerView.Adapte
             }
         }
     }
-
 
 }
