@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.room.Room
 import com.adl.mobileroom.adapter.MobileRoomAdapter
@@ -36,6 +37,7 @@ class MainActivity : AppCompatActivity() {
 
             }
         }
+
 
     lateinit var mobileadapter: MobileRoomAdapter
     var lstMobile = ArrayList<MobileModel>()

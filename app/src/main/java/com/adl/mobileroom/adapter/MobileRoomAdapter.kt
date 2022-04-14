@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.adl.mobileroom.MainActivity
 import com.adl.mobileroom.R
 import com.adl.mobileroom.database.MobileRoomDatabase
 import com.adl.mobileroom.database.model.MobileModel
@@ -24,6 +25,8 @@ class MobileRoomAdapter (val data :ArrayList<MobileModel>) : RecyclerView.Adapte
 
     override fun onBindViewHolder(holder: MobileRoomVH, position: Int) {
         holder.bindData(this@MobileRoomAdapter,position)
+
+
     }
 
     override fun getItemCount(): Int {
@@ -47,5 +50,4 @@ class MobileRoomAdapter (val data :ArrayList<MobileModel>) : RecyclerView.Adapte
             }
         }
     }
-
 }

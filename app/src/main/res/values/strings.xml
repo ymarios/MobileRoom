@@ -4,7 +4,7 @@
     <string name="selected_item2">Status :</string>
 
     <string-array name="Gender">
-        <item>Pria</item>
+        <item>Laki</item>
         <item>Wanita</item>
     </string-array>
 

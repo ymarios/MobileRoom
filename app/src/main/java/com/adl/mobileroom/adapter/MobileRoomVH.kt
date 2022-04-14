@@ -22,6 +22,14 @@ class MobileRoomVH(view: View) : RecyclerView.ViewHolder(view) {
         delete.setOnClickListener {
             adapter.deleteDataAt(position)
 
+        }
+
+        fun holdData(adapter: MobileRoomAdapter, position: Int) {
+
+            nama.setText(adapter.data.get(position).nama)
+            gender.setText(adapter.data.get(position).gender)
+            umur.setText(adapter.data.get(position).umur)
+            status.setText(adapter.data.get(position).status)
 
         }
 
